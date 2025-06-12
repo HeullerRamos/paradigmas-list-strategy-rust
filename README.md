@@ -1,0 +1,1 @@
+# paradigmas-list-strategy-rust
