@@ -9,6 +9,10 @@ fn ordemCrescente(lista: &mut Vec<i64>) {
     }
 }
 
+fn imprimirLista(lista: &Vec<i64>){
+    println!("{:?}", lista);
+}
+
 fn executar_estrategia(lista: &mut Vec<i64>, estrategia: fn(&mut Vec<i64>)) {
     estrategia(lista);
 }
@@ -16,7 +20,7 @@ fn executar_estrategia(lista: &mut Vec<i64>, estrategia: fn(&mut Vec<i64>)) {
 fn main() {
     let mut lista: Vec<i64> = vec![2,3,1,5,4];
     executar_estrategia(&mut lista,ordemCrescente);
- 
+    imprimirLista(&lista);
     
     
 }
