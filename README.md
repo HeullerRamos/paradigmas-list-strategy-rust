@@ -10,7 +10,7 @@ A função **`executar_estrategia`** permite executar uma estratégia em um veto
 
 #### Assinatura
 ```rust
-fn executar_estrategia(lista: &mut Vec<i64>, estrategia: fn(&mut Vec<i64>));
+fn executar_estrategia(lista: &mut Vec<i64>, fn(&mut Vec<i64>));
 ```
 
 ### 1. `ordemCrescente` (Ordenação por Insertion Sort)
